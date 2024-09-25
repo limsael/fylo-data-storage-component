@@ -10,7 +10,6 @@ This is a solution to the [Fylo data storage component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -29,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
-- Live Site URL: [Live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/fylo-data-storage-component-html-scss-N8OOjJu0kc)
+- Live Site URL: [Live site URL here](https://limsael.github.io/fylo-data-storage-component/)
 
 ## My process
 
@@ -43,14 +42,6 @@ Users should be able to:
 - Mobile-first workflow
 
 
-### What I learned
-
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-
 ### Continued development
 
 - The remaining storage box
@@ -59,8 +50,6 @@ Users should be able to:
 
 - [Stackoverflow](https://stackoverflow.com)
 - [CSS Portal](https://www.cssportal.com/) 
-
-
 
 ## Author
 
