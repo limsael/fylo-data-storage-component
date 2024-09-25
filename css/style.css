@@ -1,0 +1,149 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap");
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+body {
+  font-family: "Raleway", sans-serif;
+  background: url(../images/bg-mobile.png) fixed, hsl(229, 57%, 11%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 5rem 1.95rem;
+}
+
+p {
+  font-size: 0.875rem;
+}
+
+.component {
+  display: grid;
+  gap: 1.125rem;
+}
+.component__top, .component__bottom {
+  background-color: hsl(228, 56%, 26%);
+}
+.component__top {
+  padding: 4rem 6rem 1.95rem 2.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  border-radius: 0.75rem;
+  border-top-right-radius: 50%;
+}
+.component__services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1.25rem;
+}
+.component__services img {
+  background-color: hsl(229, 57%, 11%);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+}
+.component__bottom {
+  padding: 2.5rem 2rem 5rem;
+  border-radius: 0.75rem;
+  position: relative;
+}
+.component__info {
+  color: hsl(243, 100%, 93%);
+  margin-block-end: 0.95rem;
+  text-align: center;
+}
+.component__info span {
+  font-weight: 700;
+}
+.component__progress {
+  position: relative;
+}
+.component__overlay {
+  height: 22px;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.6rem;
+  padding: 3px;
+  margin-block-end: 0.95rem;
+}
+.component__overlay-bar {
+  height: 16px;
+  width: 81%;
+  border-radius: 0.6rem;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  position: relative;
+}
+.component__overlay-bar div {
+  width: 14px;
+  height: 14px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 7px;
+  position: absolute;
+  right: 2px;
+  top: 1px;
+}
+.component__min, .component__max {
+  position: absolute;
+  color: hsl(243, 100%, 93%);
+  margin-block-end: 0.95rem;
+}
+.component__max {
+  right: 0;
+}
+.component__box {
+  background-color: hsl(0, 0%, 100%);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  translate: -50%;
+}
+.component__text {
+  color: hsl(229, 7%, 55%);
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  font-weight: 700;
+}
+.component__text span {
+  color: hsl(229, 57%, 11%);
+  font-size: 1.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: url(../images/bg-desktop.png) fixed, hsl(229, 57%, 11%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+  }
+  .component {
+    grid-template-columns: 430px 535px;
+    align-items: end;
+  }
+  .component__services {
+    grid-template-columns: repeat(3, 40px);
+    gap: 0.95rem;
+  }
+  .component__bottom {
+    padding-block-end: 2rem;
+  }
+  .component__info {
+    text-align: left;
+  }
+  .component__box {
+    top: -20%;
+    translate: 72%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 93% 75%, 0% 75%);
+    padding: 0.95rem 1rem 1.95rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

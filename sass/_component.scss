@@ -1,0 +1,150 @@
+.component {
+  display: grid;
+  gap: 1.125rem;
+
+  &__top,
+  &__bottom {
+    background-color: $dark-blue;
+  }
+
+  &__top {
+    padding: 4rem 6rem 1.95rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    border-radius: 0.75rem;
+    border-top-right-radius: 50%;
+  }
+
+  &__services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.25rem;
+
+    img {
+      background-color: $very-dark-blue;
+      padding: 0.75rem;
+      border-radius: 0.75rem;
+    }
+  }
+
+  &__bottom {
+    padding: 2.5rem 2rem 5rem;
+    border-radius: 0.75rem;
+    position: relative;
+  }
+
+  &__info {
+    color: $pale-blue;
+    margin-block-end: 0.95rem;
+    text-align: center;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__progress {
+    position: relative;
+  }
+
+  &__overlay {
+    height: 22px;
+    background-color: $very-dark-blue;
+    border-radius: 0.6rem;
+    padding: 3px;
+    margin-block-end: 0.95rem;
+
+    &-bar {
+      height: 16px;
+      width: 81%;
+      border-radius: 0.6rem;
+      background: linear-gradient(90deg, $beige, $soft-pink);
+      position: relative;
+
+      div {
+        width: 14px;
+        height: 14px;
+        background-color: $pale-blue;
+        border-radius: 7px;
+        position: absolute;
+        right: 2px;
+        top: 1px;
+      }
+    }
+  }
+
+  &__min,
+  &__max {
+    position: absolute;
+    color: $pale-blue;
+    margin-block-end: 0.95rem;
+  }
+
+  &__max {
+    right: 0;
+  }
+
+  &__box {
+    background-color: $white;
+    padding: 1.25rem 1.5rem;
+    border-radius: 0.75rem;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    translate: -50%;
+  }
+
+  &__text {
+    color: $grayish-blue;
+    display: flex;
+    gap: 0.65rem;
+    align-items: center;
+    font-weight: 700;
+
+    span {
+      color: $very-dark-blue;
+      font-size: 1.75rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background:
+      url(../images/bg-desktop.png) fixed,
+      $very-dark-blue;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+  }
+
+  .component {
+    grid-template-columns: 430px 535px;
+    align-items: end;
+
+    &__services {
+      grid-template-columns: repeat(3, 40px);
+      gap: 0.95rem;
+    }
+
+    &__bottom {
+      padding-block-end: 2rem;
+    }
+
+    &__info {
+      text-align: left;
+    }
+
+    &__box {
+      top: -20%;
+      translate: 72%;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 100% 75%, 100% 100%, 93% 75%, 0% 75%);
+      padding: 0.95rem 1rem 1.95rem;
+    }
+  }
+}
